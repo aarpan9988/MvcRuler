@@ -27,3 +27,7 @@ PART3[ADD A VIEW]
 
 Currently in my controller i have a message for the index method.So i will change it to the return view . So what's next I added the new folder under the view folder and named it HelloWorld.
 Next i added new item the index.cshtml page in the HelloWorld folder .Next i am going to updated it for my view part.
+Now i am playing with the view of my application which is basically what a customer gonna see. So updated the created html page also the layout page in the shared folder under views. 
+I changed the name of my application name with the name: Rulers_Rule
+
+Now i replaced the index title with the name for my list of rulers.
