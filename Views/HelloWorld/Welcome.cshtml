@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome</h2>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["NumTimes"]; i++)  @* I am creating a loop using a for loop to print the name number of times of the numtimes *@
+    {
+        <li>@ViewData["Message"]</li>
+    }
+</ul>

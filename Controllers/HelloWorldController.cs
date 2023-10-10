@@ -20,9 +20,12 @@ namespace MvcRuler.Controllers
         //{
         //    return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}"); // Changed the welcome method to add two parametres (Following the PART2)
         ////}
-        public string Welcome(string name, int ID = 1)
+        public IActionResult Welcome(string name, int numTimes = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+            ViewData["Message"] = "Hello " + name;                  // Chaned the welcome method for the printing the name witha hello in front
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
         }
     }
 }

@@ -31,3 +31,8 @@ Now i am playing with the view of my application which is basically what a custo
 I changed the name of my application name with the name: Rulers_Rule
 
 Now i replaced the index title with the name for my list of rulers.
+
+Firstly i cahnged the welcome method to add the name and numtime in the Viewdata dictionary.
+Now the main part is here to be perfomed. Passing data from controller to the view. Whats that creating a loop in the welcome.cshtml.
+Now what gonna happen is  according to the numtimes [hello+name] will be printed out in a sequence which can be viwed.
+Now we pass
