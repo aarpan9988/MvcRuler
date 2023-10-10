@@ -35,4 +35,10 @@ Now i replaced the index title with the name for my list of rulers.
 Firstly i cahnged the welcome method to add the name and numtime in the Viewdata dictionary.
 Now the main part is here to be perfomed. Passing data from controller to the view. Whats that creating a loop in the welcome.cshtml.
 Now what gonna happen is  according to the numtimes [hello+name] will be printed out in a sequence which can be viwed.
-Now we pass
+ 
+
+PART4[Adding data Model class]
+In this part i craeted a database for my application which  contain the categories of the product{id,Title,Material,purpose,Length,price}
+Now lets move forward with the next step. I need to run the command in the Package manager console:"Install-Package Microsoft.EntityFrameworkCore.SqlServer".
+Next I created the database class context. I created a Data folder in my app and added a controller name MvcRulerContext and changed the code in it according to the requirement
+it was showing error so I wrote down the code mannually it the errors are gone now good to go now.
