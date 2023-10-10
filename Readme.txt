@@ -42,3 +42,7 @@ In this part i craeted a database for my application which  contain the categori
 Now lets move forward with the next step. I need to run the command in the Package manager console:"Install-Package Microsoft.EntityFrameworkCore.SqlServer".
 Next I created the database class context. I created a Data folder in my app and added a controller name MvcRulerContext and changed the code in it according to the requirement
 it was showing error so I wrote down the code mannually it the errors are gone now good to go now.
+
+Since I created the database I surely had to register it so I am gonna register it by adding the using statement in the startup.cs and adding the code in the startup.cs configureServices.
+Later I added a connecting string in the appsettings.json file and examine my database.
+

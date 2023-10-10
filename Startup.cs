@@ -1,3 +1,5 @@
+using MvcRuler.Data;
+using Microsoft.EntityFrameworkCore;  // Doing Part 4 here Registering my Database
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,8 @@ namespace MvcRuler
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<MvcRulerContext>(options =>
+             options.UseSqlServer(Configuration.GetConnectionString("MvcRulerContext")));    // Doing Part 4 here Registering my Database
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
