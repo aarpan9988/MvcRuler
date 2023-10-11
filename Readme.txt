@@ -38,6 +38,8 @@ Now what gonna happen is  according to the numtimes [hello+name] will be printed
  
 
 PART4[Adding data Model class]
+
+
 In this part i craeted a database for my application which  contain the categories of the product{id,Title,Material,purpose,Length,price}
 Now lets move forward with the next step. I need to run the command in the Package manager console:"Install-Package Microsoft.EntityFrameworkCore.SqlServer".
 Next I created the database class context. I created a Data folder in my app and added a controller name MvcRulerContext and changed the code in it according to the requirement
@@ -45,4 +47,12 @@ it was showing error so I wrote down the code mannually it the errors are gone n
 
 Since I created the database I surely had to register it so I am gonna register it by adding the using statement in the startup.cs and adding the code in the startup.cs configureServices.
 Later I added a connecting string in the appsettings.json file and examine my database.
+
+
+
+The complete step is I added the scaffolding item in it as per tutoriall but it gives me error of about the nuget packages version . Again i installed the latest version of the nuget packagers.
+Again i added the scaffolding item and run the migration command and update commands in the package manager prompt.
+
+It created my migrations folder and the timspan    ( GUESS WHAT IT WILL SHOW THAT I CREATED MY APPLICATION BY MYSELF.......!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)
+By this my part 4 is completed .
 
