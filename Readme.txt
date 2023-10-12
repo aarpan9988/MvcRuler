@@ -60,4 +60,6 @@ By this my part 4 is completed .
 PART 5
 
 Adding seedData in my application .
+According to the tutorial I created a class name SeedData under the Model folder and added the data of the ruler in it.Next I updated the startup.cs file and the program.cs file of my application.
+I test the app and it worked.(I am doing good and entered the 10 entries in the data.)
 
