@@ -56,3 +56,8 @@ Again i added the scaffolding item and run the migration command and update comm
 It created my migrations folder and the timspan    ( GUESS WHAT IT WILL SHOW THAT I CREATED MY APPLICATION BY MYSELF.......!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)
 By this my part 4 is completed .
 
+
+PART 5
+
+Adding seedData in my application .
+
