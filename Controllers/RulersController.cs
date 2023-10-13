@@ -49,7 +49,11 @@ namespace MvcRuler.Controllers
 
             return View(rulerMaterialVM);
         }
-
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)                  // To specify the path of searchString in URL
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
+        }
         // GET: Rulers/Details/5
         public async Task<IActionResult> Details(int? id)
         {

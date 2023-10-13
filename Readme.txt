@@ -77,3 +77,5 @@ Under my Ruler/inde.cshtml i added the form to add a search bar in it and filter
 Now what I created the class name RulerMaterialView under the Model folder and added the code in it.
 Later i updated my index method with the searchstring for the material column in that.folder to fetch the data using the material column .
 After that I updated the index of the view to add search by material in it.
+
+Now I added the path of searchString in URL using http and Get method.

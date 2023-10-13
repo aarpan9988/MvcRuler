@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<form asp-controller="Rulers" asp-action="Index">
+<form asp-controller="Rulers" asp-action="Index" method="get">
     <select asp-for="RulerMaterial" asp-items="Model.Materials"> @* Added a search by Material feature here*@
         <option value="">All</option>
     </select>
