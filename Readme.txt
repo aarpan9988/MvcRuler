@@ -84,4 +84,12 @@ PART 7 : ADDING A COLUMN RATING
  I am adding a new field in the application, In my models folder in the Ruler.cs file I added the new field name Rating for my application.
  Then I build the application. After that I changed the CSHTML file to show the column in the view. The next step I added my seedData with the new column named rating and i also updated my all files with rating field
 
+ Part 8
  in the last step i add validation to my to my ruler model...then test it... its working....
+
+
+ PART 9
+
+ Adding the about us file in the home page . In this I created a veiw under the home folder and added the file in it. Modified the page with information about my company.
+ Later I Updated the layout page with the new page About also updated the homecontroller.cs file with the new view page.
+ I run it and it worked now I have a About us page in my application.
