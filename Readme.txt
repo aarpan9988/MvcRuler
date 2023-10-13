@@ -79,3 +79,7 @@ Later i updated my index method with the searchstring for the material column in
 After that I updated the index of the view to add search by material in it.
 
 Now I added the path of searchString in URL using http and Get method.
+
+PART 7 : ADDING A COLUMN RATING 
+ I am adding a new field in the application, In my models folder in the Ruler.cs file I added the new field name Rating for my application.
+ Then I build the application. After that I changed the CSHTML file to show the column in the view. The next step I added my seedData with the new column named rating and i also updated my all files with rating field

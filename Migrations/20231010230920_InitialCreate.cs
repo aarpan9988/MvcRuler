@@ -16,7 +16,8 @@ namespace MvcRuler.Migrations
                     Purpose = table.Column<string>(nullable: true),
                     Material = table.Column<string>(nullable: true),
                     Length = table.Column<decimal>(nullable: false),
-                    Price = table.Column<decimal>(nullable: false)
+                    Price = table.Column<decimal>(nullable: false),
+                    Rating= table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

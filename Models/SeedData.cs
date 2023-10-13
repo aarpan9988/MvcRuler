@@ -27,7 +27,8 @@ namespace MvcRuler.Models
                         Purpose = "Woodworking ",
                         Material = "Romantic Comedy",
                         Length = 150.0M,
-                        Price = 12.99M
+                        Price = 12.99M,
+                        Rating = "A"
                     },
 
                     new Ruler
@@ -36,7 +37,8 @@ namespace MvcRuler.Models
                         Purpose = "Engineering",
                         Material = "Wood, Plastic",
                         Length = 30.0M,
-                        Price = 8.99M
+                        Price = 8.99M,
+                        Rating = "B"
                     },
 
                     new Ruler
@@ -45,7 +47,8 @@ namespace MvcRuler.Models
                         Purpose = " Carpenters",
                         Material = "HardWood",
                         Length = 60.0M,
-                        Price = 13.69M
+                        Price = 13.69M,
+                        Rating = "A"
                     },
 
                     new Ruler
@@ -54,7 +57,8 @@ namespace MvcRuler.Models
                         Purpose = "mechanics",
                         Material = "Western",
                         Length = 15.24M,
-                        Price = 23.79M
+                        Price = 23.79M,
+                        Rating = "F"
                     },
 
                     new Ruler
@@ -63,7 +67,8 @@ namespace MvcRuler.Models
                         Purpose = "Construction",
                         Material = "Wood",
                         Length = 91.44M,
-                        Price = 3.99M
+                        Price = 3.99M,
+                        Rating = "B"
                     },
 
                     new Ruler
@@ -72,7 +77,8 @@ namespace MvcRuler.Models
                         Purpose = "Sewing ,Craft",
                         Material = "Nylon",
                         Length = 76.2M,
-                        Price = 6.99M
+                        Price = 6.99M,
+                        Rating = "D"
                     },
 
                     new Ruler
@@ -81,7 +87,8 @@ namespace MvcRuler.Models
                         Purpose = "Orthographic projection",
                         Material = "Plastic ",
                         Length = 14.9M,
-                        Price = 26.89M
+                        Price = 26.89M,
+                        Rating = "A"
                     },
 
                     new Ruler
@@ -90,7 +97,8 @@ namespace MvcRuler.Models
                         Purpose = "Construction",
                         Material = "Wood, Plastic, Steel",
                         Length = 30.0M,
-                        Price = 12.69M
+                        Price = 12.69M,
+                        Rating = "C"
                     },
 
                     new Ruler
@@ -99,7 +107,9 @@ namespace MvcRuler.Models
                         Purpose = "Architectural Drawing",
                         Material = "Transparent Plastic",
                         Length = 15.6M,
+                        Rating = "A",
                         Price = 35.99M
+                        
                     },
 
                     new Ruler
@@ -108,7 +118,8 @@ namespace MvcRuler.Models
                         Purpose = "Depth measurements",
                         Material = "Steel",
                         Length = 38.8M,
-                        Price = 28.79M
+                        Price = 28.79M,
+                        Rating = "C"
                     }
                 );
                 context.SaveChanges();

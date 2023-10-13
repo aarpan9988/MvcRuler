@@ -83,7 +83,7 @@ namespace MvcRuler.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Purpose,Material,Length,Price")] Ruler ruler)
+        public async Task<IActionResult> Create([Bind("Id,Title,Purpose,Material,Length,Price,Rating")] Ruler ruler)
         {
             if (ModelState.IsValid)
             {
@@ -115,7 +115,7 @@ namespace MvcRuler.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Purpose,Material,Length,Price")] Ruler ruler)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Purpose,Material,Length,Price,Rating")] Ruler ruler)
         {
             if (id != ruler.Id)
             {
