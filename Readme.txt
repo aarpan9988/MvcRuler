@@ -70,3 +70,4 @@ In my part 6 I examine the code according to the tutorial.
 Next step PART 7[ ADDING A SEARCH BAR ]
 In my Controllers folder in the RulersController.cs file I added the searchstring parameter with the  query for the loop of search , in the index method.
 Added the Lambda expression "rulers.Where(s => s.Title.Contains(searchString))" to specify the where place.
+Under my Ruler/inde.cshtml i added the form to add a search bar in it and filter the result using the search bar.
