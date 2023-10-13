@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MvcRuler.Models.Ruler>
+﻿@model MvcRuler.Models.RulerMaterialViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -10,34 +10,35 @@
     <a asp-action="Create">Create New</a>
 </p>
 <form asp-controller="Rulers" asp-action="Index">
-    <p>
-        Title: <input type="text" name="SearchString" /> @* Added the form for the search bar here*@
-        <input type="submit" value="Filter" />
-    </p>                                    
+    <select asp-for="RulerMaterial" asp-items="Model.Materials"> @* Added a search by Material feature here*@
+        <option value="">All</option>
+    </select>
+
+    Title: <input type="text" asp-for="SearchString" />
 </form>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                @Html.DisplayNameFor(model => model.Rulers[0].Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Purpose)
+                @Html.DisplayNameFor(model => model.Rulers[0].Purpose)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Material)
+                @Html.DisplayNameFor(model => model.Rulers[0].Material)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Length)
+                @Html.DisplayNameFor(model => model.Rulers[0].Length)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                @Html.DisplayNameFor(model => model.Rulers[0].Price)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Rulers)
         {
             <tr>
                 <td>

@@ -20,17 +20,34 @@ namespace MvcRuler.Controllers
         }
 
         // GET: Rulers
-        public async Task<IActionResult> Index(string searchString)
+
+        public async Task<IActionResult> Index(string rulerMaterial, string searchString)
         {
-            var rulers = from m in _context.Ruler                    // The query to find the ruler
+            // Use LINQ to get list of Materials.
+            IQueryable<string> materialQuery = from m in _context.Ruler
+                                               orderby m.Material
+                                               select m.Material;
+
+            var rulers = from m in _context.Ruler
                          select m;
 
-            if (!String.IsNullOrEmpty(searchString))            
+            if (!string.IsNullOrEmpty(searchString))
             {
-                rulers = rulers.Where(s => s.Title.Contains(searchString)); // Added the  searchString parameter to filter the rulers
+                rulers = rulers.Where(s => s.Title.Contains(searchString));
             }
 
-            return View(await rulers.ToListAsync());
+            if (!string.IsNullOrEmpty(rulerMaterial))
+            {
+                rulers = rulers.Where(x => x.Material == rulerMaterial);
+            }
+
+            var rulerMaterialVM = new RulerMaterialViewModel
+            {
+                Materials = new SelectList(await materialQuery.Distinct().ToListAsync()),
+                Rulers = await rulers.ToListAsync()
+            };
+
+            return View(rulerMaterialVM);
         }
 
         // GET: Rulers/Details/5
