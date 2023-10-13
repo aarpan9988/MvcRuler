@@ -63,3 +63,10 @@ Adding seedData in my application .
 According to the tutorial I created a class name SeedData under the Model folder and added the data of the ruler in it.Next I updated the startup.cs file and the program.cs file of my application.
 I test the app and it worked.(I am doing good and entered the 10 entries in the data.)
 
+
+PART 6 :
+In my part 6 I examine the code according to the tutorial.
+
+Next step PART 7[ ADDING A SEARCH BAR ]
+In my Controllers folder in the RulersController.cs file I added the searchstring parameter with the  query for the loop of search , in the index method.
+Added the Lambda expression "rulers.Where(s => s.Title.Contains(searchString))" to specify the where place.

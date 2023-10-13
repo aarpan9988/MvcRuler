@@ -20,9 +20,17 @@ namespace MvcRuler.Controllers
         }
 
         // GET: Rulers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Ruler.ToListAsync());
+            var rulers = from m in _context.Ruler                    // The query to find the ruler
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))            
+            {
+                rulers = rulers.Where(s => s.Title.Contains(searchString)); // Added the  searchString parameter to filter the rulers
+            }
+
+            return View(await rulers.ToListAsync());
         }
 
         // GET: Rulers/Details/5

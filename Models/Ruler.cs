@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MvcRuler.Models
 {
@@ -13,7 +14,11 @@ namespace MvcRuler.Models
         public string Material { get; set; }
 
         public decimal Length { get; set; }
+
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
+
+
     }
 }
 
